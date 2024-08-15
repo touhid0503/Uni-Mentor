@@ -1,0 +1,51 @@
+/* Style the profile container */
+.profile-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 50px auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Style the profile picture */
+.profile-picture {
+  flex-basis: 30%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-picture img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+/* Style the profile information */
+.profile-info {
+  flex-basis: 70%;
+}
+
+.profile-info h2 {
+  margin-bottom: 10px;
+}
+
+.profile-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.profile-info li {
+  margin-bottom: 5px;
+}
+
+
+.profile-attendance {
+  flex-basis: 50%;
+  margin-bottom: 20px;
+}
+
+.profile-result h2,
+.profile-attendance h2 {
+  margin-bottom: 10px;
+}

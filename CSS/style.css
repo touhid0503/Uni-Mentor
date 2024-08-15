@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+a{
+    text-decoration:none;
+}
+ul,ol{
+    list-style-type: none;
+}
+img{
+    vertical-align: middle;
+}
+.clr{
+    clear: both;
+}
+.container{
+    width: 100%;
+    height: 0 auto;
+}
+/* .container {
+    width: 1170px;
+    bottom: 20px;
+    margin: 0 auto;
+  } */
+/* ================= Navbar part css start ======================  */
+#header{
+    background: #d9d9d9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*padding: 15px 0;edited*/
+}
+
+.logo{
+    width: 200px;
+    float: left;
+    padding-left: 30px;
+}
+.logo img{
+    height: 100px;
+}
+.menu{
+    width: 970px;
+    float: left;
+    text-align: right;
+}
+.menu ul {
+    padding: 0; /*edited*/
+}
+.menu ul li{
+    display: inline-block;
+    margin-left: 20px;/*edited*/
+}
+.menu ul li a{
+    font-family: 'Roboto', sans-serif;
+    line-height: 90px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-left: 42px; /*edited*/
+    transition: all linear 0.4s;
+}
+.menu ul li a:hover{
+    color: #25a2bf;
+    text-underline-position: auto;
+}
+<!------------------------ banner part start -------------------------->
+.section img{
+    width: 100%;
+    height: 50px;
+}
+/* ------------------------ container part start -------------------------- */
+/* 
+footer
+{
+	background-color: black;
+	height: 70px;
+	width: 100%;
+
+}
+
+
+.footer_text
+{
+	text-align: center;
+	color: white;
+	top: 20%;
+	position: relative;
+} */

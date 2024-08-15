@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Faculty Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section class="profile-container">
+    <div class="profile-picture">
+      <img src="faculty_picture.jpg" alt="Faculty Picture">
+    </div>
+    <div class="profile-info">
+      <h2>Faculty Information</h2>
+      <ul>
+        <li>Name: <span id="faculty-name"></span></li>
+        <li>Department: <span id="department"></span></li>
+        <li>Designation: <span id="designation"></span></li>
+      </ul>
+    </div>
+    <div class="student-list">
+      <h2>Students</h2>
+      <ul id="student-list">
+        </ul>
+    </div>
+  </section>
+
+  <script>
+    // Replace with actual logic to fetch student information
+    const students = [
+      { name: "John Doe", gpa: 3.8, attendance: 90 },
+      { name: "Jane Smith", gpa: 3.5, attendance: 85 },
+      // ... Add more student data objects ...
+    ];
+
+    const studentList = document.getElementById("student-list");
+    students.forEach(student => {
+      const listItem = document.createElement("li");
+      listItem.innerHTML = `
+        ${student.name} (GPA: ${student.gpa}, Attendance: ${student.attendance}%)
+        <button data-student-name="${student.name}">Details</button>
+      `;
+      studentList.appendChild(listItem);
+    });
+
+    // Add event listener for student details button click (replace with actual details display logic)
+    studentList.addEventListener("click", (event) => {
+      const clickedButton = event.target;
+      if (clickedButton.tagName === "BUTTON") {
+        const studentName = clickedButton.dataset.studentName;
+        alert(`Displaying details for student: ${studentName}`); // Replace with actual details display
+      }
+    });
+  </script>
+</body>
+
+</html>

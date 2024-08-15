@@ -1,0 +1,85 @@
+/* General styles */
+a{
+    text-decoration: none;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  margin: 50px auto;
+  width: 400px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+  background-color: #45A049; /* Green hover */
+}
+
+/* Hide the original submit button text (fixes duplicate text issue) */
+button[type="submit"] {
+  text-align: left; /* Hide original text with padding and link styling */
+  padding-left: 25px; /* Creates space for link text */
+}
+
+/* Style the link within the button */
+button[type="submit"] a {
+  color: white; /* Inherit button text color */
+  text-decoration: none; /* Remove underline */
+}
+
+button[type="submit"] a:hover {
+  color: #ddd; /* Change link color on hover */
+}
+button[type="button"] {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  button[type="button"]:hover {
+    background-color: #45A049; /* Green hover */
+  }

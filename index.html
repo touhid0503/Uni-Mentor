@@ -1,0 +1,149 @@
+<?php
+
+error_reporting(0);
+
+session_start();
+session_destroy();
+if ($_SESSION['message']) {
+	$message = $_SESSION['message'];
+	echo "<script type='text/javascript'>
+		alert('$message');
+	</script>";
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uni mentor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+</head>
+
+<body>
+    <?php include('navbar.html'); ?>
+<!-- -------------- nav bar part start   -------------- -->
+<section id="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo/uni-mentor.png" alt="logo">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="faculty_login.php">Faculty</a></li>
+                    <li><a href="login.php">Student</a></li>
+                    <li><a href="admin_login.php">Admin</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="clr"></div>
+        </div>
+    </div>
+</section>
+<!-- -------------- nav bar part end   ---------------- -->*/
+
+<!------------------------ banner part start ------------------------->
+<section id="banner">
+    <div class="section">
+        <div style="text-align: center;">
+            <img src="images/pexels-pixabay-207691.jpg" height="600" width="1000" alt="banner">
+        </div>
+        <!-- <div class="banner-text">
+            <h1>Jonathon Kuub</h1>
+            <h3>photography</h3>
+            <p>Based in New York science 2001</p>
+        </div> -->
+
+        <div class="service-main">
+            <div class="service-item"></div>
+        </div>
+    </div>
+</section>
+<!------------------------ banner part end -------------------------->
+
+<div class="container" style="text-align: center;">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="images/banner.jpg" height="600" width="1000" alt="">
+        </div>
+
+        <div class="col-md-8">
+            <h1>Welcome to Project</h1>
+            <p>Your Path to Academic Excellence</p>
+        </div>
+    </div>
+</div><br><br>
+<center>
+    <h1>Our Teachers</h1>
+</center>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="#" alt="teacher">
+        </div>
+        <div class="col-md-4">
+            <img src="#" alt="teacher">
+        </div>
+    </div>
+</div><br><br>
+<center>
+    <h1 class="adm">Admission Form</h1>
+
+</center>
+
+<div>
+    <link href="admi.css" rel="stylesheet">
+    <div class="admission_form">
+
+        <form action="data_check.php" method="POST">
+
+            <div class="adm_int">
+                <label class="label_text">Name</label>
+                <input class="input_deg" type="text" name="name">
+            </div>
+
+            <div class="adm_int">
+                <label class="label_text">Email</label>
+                <input class="input_deg" type="text" name="email">
+            </div>
+
+            <div class="adm_int">
+                <label class="label_text">Phone</label>
+                <input class="input_deg" type="text" name="phone">
+            </div>
+            <div class="adm_int">
+                <label class="label_text">Message</label>
+                <textarea class="input_txt" name="message"></textarea>
+            </div>
+            <div class="adm_int">
+                <label class="label_text">Password</label>
+                <input class="input_deg" type="password" name="password">
+            </div>
+            <div class="adm_int">
+
+                <input class="btn btn-primary" id="submit" type="submit" value="apply" name="apply">
+            </div>
+
+
+        </form>
+
+    </div>
+</div><br>
+
+<div style="text-align: center;">
+    <footer style="background-color: black; color: white; height: 100px; width: 1500px;">
+        <br><br>
+        <h3 class="footer_text">All @copyright reserved by uni-mentor</h3>
+    </footer>
+</div>
+</body>

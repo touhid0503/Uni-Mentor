@@ -1,0 +1,104 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f1f1f1;
+  padding: 15px;
+}
+
+header h1 {
+  display: inline-block;
+  margin: 0;
+}
+
+header nav {
+  float: right;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+header nav li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+section h2 {
+  margin-bottom: 10px;
+}
+
+.student-actions,
+.teacher-actions,
+.course-actions {
+  margin-bottom: 10px;
+}
+
+.student-actions button,
+.teacher-actions button,
+.course-actions button {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.student-actions button:hover,
+.teacher-actions button:hover,
+.course-actions button:hover {
+  background-color: #45A049; /* Green hover */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+label {
+  align-self: flex-start; /* Align labels to left */
+}
+
+input[type="text"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button[type="submit"] {
+  align-self: flex-end; /* Align submit button to right */
+}
+
+/* Hide initially hidden content (forms and view sections) */
+#add-student-form,
+#view-students,
+#add-teacher-form,
+#view-teachers,
+#add-course-form,
+#view-courses {
+  display: none;
+}
