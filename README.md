@@ -4,9 +4,10 @@ Project Proposal: A Website for Teacher-Student Interaction and Attendance Manag
 
 INTRODUCTION:
 This project aims to create a website that will facilitate the interaction between teachers and students and enable the teachers to take and manage attendance online. The website will have the following features:
-● A registration and login system, where teachers and students can create accounts with their IDs and passwords.
-● An attendance system, where teachers can mark attendance for each class using manual input, and students can check their attendance records anytime also with percentages and marks.
-● A database, where all the data related to the users, and attendance will be stored and retrieved.
+
+ ● A registration and login system, where teachers and students can create accounts with their IDs and passwords.
+ ● An attendance system, where teachers can mark attendance for each class using manual input, and students can check their attendance records anytime also with percentages and marks.
+ ● A database, where all the data related to the users, and attendance will be stored and retrieved.
 
 GOALS & OBJECTIVE:
 The solution that this project proposes is to create a website that will have the following functionalities:
