@@ -130,5 +130,6 @@ By leveraging **HTML, CSS, JavaScript, PHP, and MySQL**, the system will improve
 
 ## 🧑‍💻 Developed By
 **Md. Touhidul Islam**  
-💼 Academic Project | Department of Software Development Lab 3  
-📅 Year: 2025  
+**Md. Backtiar Abir**  
+💼 Academic Project | Department of Software Development Lab 2  
+📅 Year: 2023  
